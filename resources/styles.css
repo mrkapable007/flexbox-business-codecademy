@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+header .head-container {
+    display: flex;
+    background-color: #141414;
+    justify-content: space-between;
+    padding: 3rem;
+
+}
+
+.logo{
+    color: #ddcdb6;
+}
+
+.head-nav ul{
+    display: flex;
+    list-style: none;
+    color: #ddcdb6;
+}
+
+nav li{
+    padding-right: 1rem;
+}
+
+@media only screen and (min-width: 486px) and (max-width: 768px){
+    nav li{
+        padding-top: 15px;
+    }
+}
+
+nav li:hover{
+    color: #eef0f2;
+    font-size: 20px;
+    font-size: 1.5rem;
+}
+
+main {
+    background-image: url('/resources/images/walling-OvLXbURo9Wo-unsplash.jpg');
+    display: flex;
+    height: 550px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main p{
+    color: #eef0f2;
+    font-size: 1.5rem;
+}
+
+
+
+/* main hero button */
+main .button-hero{
+    font-size: 1.3rem;
+    opacity: 0.8;
+    background-color: #EEC643;
+    color: #141414;
+    padding: 10px;
+    margin-top: 10px;
+    border: solid 1px #fff;
+}
+
+main .button-hero:hover{
+    font-size: 1.3rem;
+    opacity: 0.8;
+    background-color: #141414;
+    color: #EEF0F2;
+    padding: 10px;
+    margin-top: 10px;
+    transition: transform 350ms;
+    transform: translateY(5px);
+    
+}
+
+/*section area*/
+section.container-section {
+    display: flex;
+}
+
+.section-container {
+    background-color: #EEF0F2;
+    display: flex;
+    padding: 50px;
+}
+
+.email-marketing h2, .marketing-automation h2, .marketing-consulting h2{
+    font-size: 1.4rem;
+}
+
+.email-marketing, .marketing-automation {
+    border-right: 1px solid grey;
+    margin-right: 70px;
+}
+
+.email-marketing p, .marketing-automation p, .marketing-consulting p {
+    font-family: 'source pro sans';
+    font-size: 1.2rem;
+    padding-right: 5rem;
+    padding-top: 15px;
+}
+
+/*mobile responsive styles */
+ @media only screen and (min-width: 486px) and (max-width: 768px){
+    main .button-hero {
+        padding-top: 15px;
+        padding-right: 25px;
+        margin-left: 15px;
+    }
+} 
+
+
+@media only screen and (min-width: 486px) and (max-width: 768px){
+    .section-container {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}
+
+@media only screen and (min-width: 486px) and (max-width: 768px){
+    .email-marketing p, .marketing-automation p, .marketing-consulting p {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 486px) and (max-width: 768px){
+    .email-marketing, .marketing-automation {
+        border-right: 0;
+    }
+}
+
+@media only screen and (min-width: 486px) and (max-width: 768px){
+    .mid-section p {
+        padding-left: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+/* tablet responsive styles */
+@media only screen and (min-width: 768px) and (max-width: 1028px){
+    .section-container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1028px){
+    .email-marketing, .marketing-automation {
+        border-right: 0;
+        padding-bottom: 40px;
+    }
+}
+
+
+.meet-our-team{
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px;     
+}
+
+.team-container {
+    display: flex;
+}
+
+.elegance {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.elegance h4{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #141414;
+}
+
+.elegance {
+    padding-left: 1px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 486px) and (max-width: 768px){
+    .team-container {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}
+
+footer {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-content: center;
+    
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* body { background:rgb(30,30,40); } */
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #141414;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { 
+    border:2px solid #CC4949; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#EEC643;;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+    background: #141414;
+
+}
+
