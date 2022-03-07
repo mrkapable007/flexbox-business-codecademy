@@ -39,7 +39,7 @@ nav li:hover{
 }
 
 main {
-    background-image: url('/resources/images/walling-OvLXbURo9Wo-unsplash.jpg');
+    background-image: url('\resources\images\walling-OvLXbURo9Wo-unsplash.jpg');
     display: flex;
     height: 550px;
     width: auto;
